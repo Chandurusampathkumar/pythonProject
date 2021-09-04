@@ -1,7 +1,7 @@
 import threading
 import time
 
-import homepage as homepage
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -23,12 +23,12 @@ def linked_homepage():
         print(driver.title)
         print(driver.current_url)
         driver.close()
-        homepage = Test_001_login()
+
 
 
 t1 = threading.Thread(target=linked_homepage)
-t2 = threading.Thread(target=homepage)
+
 t1.start()
 time.sleep(10)
-t2.start()
+
 

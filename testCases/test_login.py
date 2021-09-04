@@ -1,5 +1,5 @@
 import pytest
-from selenium import webdriver
+
 from pageObjects.Login import Loginpage
 @pytest.mark.usefixtures("setup")
 class Test_001_login:
