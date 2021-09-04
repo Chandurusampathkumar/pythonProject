@@ -27,8 +27,9 @@ def linked_homepage():
 
 
 t1 = threading.Thread(target=linked_homepage)
-
+time.sleep(20)
 t1.start()
 time.sleep(10)
+
 
 
